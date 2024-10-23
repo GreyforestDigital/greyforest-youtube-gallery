@@ -1,10 +1,9 @@
 === Greyforest ::: Youtube Gallery ===
-Contributors: greyforest
-Donate link: https://www.paypal.me/greyforestmedia
+Contributors: GreyforestDigital
 Tags: shortcodes, youtube, gallery
 Requires at least: 4.0
-Tested up to: 6.1.1
-Stable tag: 1.5
+Tested up to: 6.6.2
+Stable tag: 1.6
 License: None
 License URI: None
 
@@ -56,28 +55,32 @@ Code: [youtubegallery_thumbnail id="" title="" filter=""]
 
 == Changelog ==
 
+= 1.6 =
+* Code refactoring
+* Tested up to WordPress version 6.6.2
+
 = 1.5 =
-* Replaced javascript-based equalheight script for thumbnails with flex-based wrapper.
-* Removed /graphics directory.
-* Tested up to WordPress version 6.1.1.
+* Replaced javascript-based equalheight script for thumbnails with flex-based wrapper
+* Removed /graphics directory
+* Tested up to WordPress version 6.1.1
 
 = 1.4 =
-* Added "View Details" link to view plugin settings and use tips.
-* Converted TinyMCE Shortcode button graphics to Base64.
-* Converted gallery dummy image to Base64.
-* Cleaned up code.
-* Added "Non-Gutenberg" notice.
+* Added "View Details" link to view plugin settings and use tips
+* Converted TinyMCE Shortcode button graphics to Base64
+* Converted gallery dummy image to Base64
+* Cleaned up code
+* Added "Non-Gutenberg" notice
 
 = 1.3 =
-* Fixed ability to filter videos by type.
+* Fixed ability to filter videos by type
 
 = 1.2 =
-* Added ability to filter videos by type.
-* Added new "filter" shortcode attribute.
+* Added ability to filter videos by type
+* Added new "filter" shortcode attribute
 
 = 1.1 =
-* Addition of automatic updates API.
-* Publicly served from Greyforest servers now.
+* Addition of automatic updates API
+* Publicly served from Greyforest servers now
 
 = 1.0 =
-* Created plugin.
+* Created plugin
