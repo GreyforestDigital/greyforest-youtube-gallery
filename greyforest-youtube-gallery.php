@@ -1,13 +1,17 @@
 <?php
 /*
 Plugin Name: Greyforest ::: YouTube Gallery
-Plugin URI: https://www.greyforest.digital/plugins
+Plugin URI: https://www.greyforest.digital/plugins/greyforest-youtube-gallery
 Description: Adds shortcode buttons + functionality for embedding a YouTube gallery with filtering options.
-Version: 1.6
+Version: 1.7
 Author: Greyforest Digital
 Author URI: https://www.greyforest.digital
+Requires at least: 4.0.0
+Tested up to: 6.7.1
 */
 
+// LOAD PLUGIN UPDATER CLASS
+use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
 
 $GreyforestYouTubeGallery__init = new GreyforestYouTubeGallery__init();
 
@@ -33,11 +37,25 @@ class GreyforestYouTubeGallery__init {
 	public function gf_youtubegallery__plugin_update_checker() {
 		
 		require 'plugin-update-checker/plugin-update-checker.php';
-		$MyUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-			'http://www.greyforest.dev/plugins/wp-update-server/?action=get_metadata&slug=greyforest-youtube-gallery', //Metadata URL.
-			__FILE__, //Full path to the main plugin file.
-			'greyforest-youtube-gallery' //Plugin slug. Usually it's the same as the name of the directory.
-		);
+		
+		$myUpdateChecker = PucFactory::buildUpdateChecker(
+			'https://www.greyforest.dev/plugins/wp-update-server/?action=get_metadata&slug=greyforest-youtube-gallery',
+			__FILE__,
+			'greyforest-youtube-gallery'
+		);		
+		
+		// $myUpdateChecker = PucFactory::buildUpdateChecker(
+		// 	'https://github.com/GreyforestDigital/greyforest-youtube-gallery',
+		// 	__FILE__,
+		// 	'greyforest-youtube-gallery'
+		// );
+		// 
+		// //Set the branch that contains the stable release.
+		// $myUpdateChecker->setBranch('main');
+		// 
+		// //Optional: If you're using a private repository, specify the access token like this:
+		// $myUpdateChecker->setAuthentication('');	
+				
 
 	}
 	///////////////////////////////////////////////////////////////////////////

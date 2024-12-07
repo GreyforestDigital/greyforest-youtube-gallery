@@ -2,8 +2,8 @@
 Contributors: GreyforestDigital
 Tags: shortcodes, youtube, gallery
 Requires at least: 4.0
-Tested up to: 6.6.2
-Stable tag: 1.6
+Tested up to: 6.7.1
+Stable tag: 1.7
 License: None
 License URI: None
 
@@ -54,6 +54,11 @@ Code: [youtubegallery_thumbnail id="" title="" filter=""]
 
 
 == Changelog ==
+
+= 1.7 =
+* Greyforest domain updates
+* Plugin Update Checker Library upgraded to v5.4
+* Tested up to WordPress version 6.7.1
 
 = 1.6 =
 * Code refactoring
